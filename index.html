@@ -1,0 +1,30 @@
+<head>
+    <link rel="stylesheet" type="text/cas" href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.css"/>
+</head>
+<table id="jomla" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>kren</th>
+            <th>fortn_mfrad</th>
+            <th>frotn_jmla</th>
+            
+        </tr>
+    </thead>
+</table>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.2/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/2.1.7/js/dataTables.js"></script>
+<script>
+new DataTable('#jomla', {
+    ajax: 'https://script.google.com/macros/s/AKfycbwTFJu-Cc1UsM5x4R1QKSsgmKtimNZEwoIIuJGIhXaqdYy2umeJ4TgEQ7aG-NwmgaIdvA/exec',
+    columns: [
+        { data: 'name' },
+        { data: 'kren' },
+        { data: 'fortn_mfrad' },
+        { data: 'frotn_jmla' }
+    ]
+});
+
+
+</script>
